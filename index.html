@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocity - Ticket</title> <!--Judul halaman web-->
+    <link rel="stylesheet" href="style.css"> <!--Menghubungkan style css dengan halaman web-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com"> <!--Menautkan link font family-->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--Menautkan link font family-->
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> <!--Menautkan link font family-->
+
+<!--Menautkan halaman web dengan file CSS yang berisi definisi gaya (style) untuk ikon dari Font Awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!--Menghubungkan halaman web ke file CSS yang berisi gaya untuk Boxicons-->
+<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+</head>
+<body>
+    <header> <!--Mendefinisikan halaman web-->
+        <div class="logo">Velocity</div> <!--Class logo menampilkan nama website dihalaman web-->
+
+        <ul class="navmenu"> <!--Class navmenu-->
+            <li><a href="#">Home</a></li> <!--Menampilkan daftar navigasi yang ada dihalaman web-->
+            <li><a href="#">Jelajah</a></li> 
+            <li><a href="#">Kontak</a></li>
+        </ul>
+
+        <div class="search-box"> <!--Class search box-->
+            <input type="text" placeholder="Cari Konser"> <!--Input pencarian-->
+        </div>
+    </header>
+
+    <section class="main-home"> <!--Class main-home pengelompokkan isi web-->
+        <div class="main-text"> <!--Class main-text memberi gaya pada css-->
+            <h1>TEMUKAN TIKET KONSER IMPIAN ANDA</h1> <!--Judul utama-->
+            <p>Dan Rasakan Euforianya</p> <!--Paragraf sambutan tambahan-->
+        </div>
+    </section>
+
+    <!--Pengelompokkan isi halaman web-->
+    <section class="trending-aktris" id="trending"> <!--Untuk memberi gaya pada css-->
+        <div class="center-text"> <!--Pengelompokkan bagian dalam web-->
+            <h2>Our <span>Trending</span></h2> <!--Judul pembuka pada class trending-->
+        </div>
+
+        <div class="aktris"> <!--Pengelompokkan aktris-->
+            <div class="row"> <!--Pengelompokkan elemen-->
+                <img src="image/sam.jpg"> <!--Gambar artis-->
+                <div class="aktris-text"> <!--Class info artis-->
+                    <h3>Sam Smith</h3> <!--Element heading nama artis-->
+                </div>
+                </div>
+                <div class="row"> <!--Pengelompokkan elemen-->
+                    <img src="image/bruno.jpg"> <!--Gambar artis-->
+                    <div class="aktris-text"> <!--Class info artis-->
+                        <h3>Bruno Mars</h3> <!--Element heading nama artis-->
+                    </div>
+                </div>
+                <div class="row"> <!--Pengelompokkan elemen-->
+                    <img src="image/ed.jpg"> <!--Gambar artis-->
+                    <div class="aktris-text"> <!--Class info artis-->
+                        <h3>Ed Sheeran</h3> <!--Element heading nama artis-->
+                    </div>
+                </div>
+                <div class="row"> <!--Pengelompokkan elemen-->
+                    <img src="image/nadin.jpg"> <!--Gambar artis-->
+                    <div class="aktris-text"> <!--Class info artis-->
+                        <h3>Nadin Amizah</h3> <!--Element heading nama artis-->
+                    </div>
+                </div>
+                <div class="row"> <!--Pengelompokkan elemen-->
+                    <img src="image/pamungkas.jpg"> <!--Gambar artis-->
+                    <div class="aktris-text"> <!--Class info artis-->
+                        <h3>Pamungkas</h3> <!--Element heading nama artis-->
+                    </div>
+                </div>
+                <div class="row"> <!--Pengelompokkan elemen-->
+                    <img src="image/hindia.jpg"> <!--Gambar artis-->
+                    <div class="aktris-text"> <!--Class info artis-->
+                        <h3>Hindia - Baskara</h3> <!--Element heading nama artis-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rekomendasi-konser"> <!--Class pengelompokkan rekomendasi konser-->
+        <div class="center"> <!--Pengelompokkan elemen-->
+            <h2>Rekomendasi <span>Konser</span></h2> <!--Judul pembuka pada class trending-->
+        </div>
+
+        <div class="rekomen"> <!--Class rekomen artis-->
+            <div class="cart"> <!--Pengelompokan elemen-->
+                <img src="image/seventen.jpg"> <!--Gambar rekomendasi konser-->
+                <h4>SEVENTEEN</h4> <!--Element heading nama konser-->
+                <P>01 Jan 2024</P> <!--Paragraf info tanggal konser-->
+                <p>GBK, Jakarta Pusat</p> <!--Paragraf info tempat konser-->
+                <p>Rp 1.000.000</p> <!--Paragraf info harga konser-->
+                <button onclick="myfunction()" class="submit">BELI</button> <!--Digunakan untuk membuat tombol interaktif di dalam halaman web-->
+            </div> 
+            <div class="cart"> <!--Pengelompokan elemen-->
+                <img src="image/nct.jpg"> <!--Gambar rekomendasi konser-->
+                <h4>NCT DREAM</h4> <!--Element heading nama konser-->
+                <P>03 March 2024</P> <!--Paragraf info tanggal konser-->
+                <p>GBK, Jakarta Pusat</p> <!--Paragraf info tempat konser-->
+                <p>Rp 2.000.000</p> <!--Paragraf info harga konser-->
+                <button onclick="myfunction()" class="submit">BELI</button> <!--Digunakan untuk membuat tombol interaktif di dalam halaman web-->
+            </div>
+            <div class="cart"> <!--Pengelompokan elemen-->
+                <img src="image/exo.jpg"> <!--Gambar rekomendasi konser-->
+                <h4>EXO</h4> <!--Element heading nama konser-->
+                <P>05 Mei 2024</P> <!--Paragraf info tanggal konser-->
+                <p>GBK, Jakarta Pusat</p> <!--Paragraf info tempat konser-->
+                <p>Rp 3.000.000</p> <!--Paragraf info harga konser-->
+                <button onclick="myfunction()" class="submit">BELI</button> <!--Digunakan untuk membuat tombol interaktif di dalam halaman web-->
+            </div>
+            <div class="cart"> <!--Pengelompokan elemen-->
+                <img src="image/bts.jpg"> <!--Gambar rekomendasi konser-->
+                <h4>BTS</h4> <!--Element heading nama konser-->
+                <P>02 Feb 2024</P> <!--Paragraf info tanggal konser-->
+                <p>GBK, Jakarta Pusat</p> <!--Paragraf info tempat konser-->
+                <p>Rp 1.500.000</p> <!--Paragraf info harga konser-->
+                <button onclick="myfunction()" class="submit">BELI</button> <!--Digunakan untuk membuat tombol interaktif di dalam halaman web-->
+            </div>
+        </div>       
+    </section> 
+
+    <section class="kontak"> <!--Class pengelompokkan elemen-->
+        <div class="kontak-info"> <!--Class kontak info-->
+            <div class="logo">Velocity</div> <!--Class logo menampilkan nama website dihalaman web-->
+            <div class="info"> <!--Class kontak info-->
+                <p>Selamat menikmati setiap detik dari konser yang Anda hadiri!</p> <!--paragraf penutup web-->
+
+                <div class="sosmed-icon"> <!--Class icon sosmed-->
+                    <a href="#"><i class='bx bxl-facebook'></i></a> <!--Ini adalah elemen ikon yang menunjukkan ikon facebook-->
+                    <a href="#"><i class='bx bxl-instagram' ></i></a> <!--Ini adalah elemen ikon yang menunjukkan ikon Instagram-->
+                    <a href="#"><i class='bx bxl-whatsapp' ></i></a> <!--Ini adalah elemen ikon yang menunjukkan ikon WhatsApp-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--fungsi menampilkan kotak dialog pesan ketika button beli di klik-->
+    <script>
+        function myfunction(){
+            alert("TERIMAKSIH TELAH BERKUNJUNG!!!")
+        }
+    </script>
+</body>
+</html>
